@@ -7,7 +7,7 @@ use crate::metrics::zpool_list::ZpoolListMetrics;
 use crate::metrics::zpool_status::ZpoolStatusMetrics;
 use anyhow::Result;
 use prometheus_client::registry::Registry;
-use tracing::{debug, error, info, warn};
+use tracing::{debug, error, warn};
 
 mod arc;
 pub mod handlers;
