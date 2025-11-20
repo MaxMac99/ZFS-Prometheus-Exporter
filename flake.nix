@@ -199,12 +199,8 @@
                 Group = "root";
 
                 # Hardening options
-                NoNewPrivileges = true;
                 PrivateTmp = true;
-                ProtectSystem = "strict";
                 ProtectHome = true;
-                ReadOnlyPaths = "/";
-                ReadWritePaths = [ "/proc/spl" ];
 
                 # Resource limits
                 MemoryMax = "256M";

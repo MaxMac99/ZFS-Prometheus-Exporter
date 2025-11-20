@@ -29,7 +29,7 @@ pub struct IoSizeStat {
 fn parse_pool_io_size_stats(content: &str) -> Result<ZpoolIoSizeStats> {
     let mut pools = HashMap::new();
     content.split("\n\n").try_for_each(|section| {
-        let mut lines = section.lines().skip(1);
+        let mut lines = section.trim_start().lines();
         let pool_name = lines.next().context("Could not parse name")?;
 
         let stats = lines

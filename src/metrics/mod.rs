@@ -7,6 +7,7 @@ use crate::metrics::zpool_list::ZpoolListMetrics;
 use crate::metrics::zpool_status::ZpoolStatusMetrics;
 use anyhow::Result;
 use prometheus_client::registry::Registry;
+use tracing::{debug, error, info, warn};
 
 mod arc;
 pub mod handlers;
@@ -51,9 +52,7 @@ impl Metrics {
     }
 
     pub async fn collect(&self) -> Result<()> {
-        use tracing::{error, warn};
-
-        // Collect all metrics concurrently, logging errors but not failing
+        debug!("collecting metrics");
         let (status_res, list_res, io_size_res, latency_res, queue_res, zfs_res, arc_res) = tokio::join!(
             self.zpool_status.collect(),
             self.zpool_list.collect(),

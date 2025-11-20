@@ -26,7 +26,7 @@ pub struct LatencyStat {
 fn parse_pool_latency_stats(content: &str) -> Result<ZpoolLatencyStats> {
     let mut pools = HashMap::new();
     content.split("\n\n").try_for_each(|section| {
-        let mut lines = section.lines().skip(1);
+        let mut lines = section.trim_start().lines();
         let pool_name = lines.next().context("Could not parse name")?;
 
         let stats = lines
