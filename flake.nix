@@ -169,6 +169,13 @@
               description = "Environment file to load (for secrets, etc.)";
               example = "/run/secrets/zfs-exporter-env";
             };
+
+            logLevel = mkOption {
+              type = types.str;
+              default = "info";
+              description = "Log level for the exporter (error, warn, info, debug, trace)";
+              example = "debug";
+            };
           };
 
           config = mkIf cfg.enable {
@@ -215,7 +222,7 @@
               } else { });
 
               environment = {
-                RUST_LOG = mkDefault "info";
+                RUST_LOG = cfg.logLevel;
               };
             };
 
