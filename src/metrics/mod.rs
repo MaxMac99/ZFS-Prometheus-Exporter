@@ -54,16 +54,15 @@ impl Metrics {
         use tracing::{error, warn};
 
         // Collect all metrics concurrently, logging errors but not failing
-        let (status_res, list_res, io_size_res, latency_res, queue_res, zfs_res, arc_res) =
-            tokio::join!(
-                self.zpool_status.collect(),
-                self.zpool_list.collect(),
-                self.zpool_io_size.collect(),
-                self.zpool_latency.collect(),
-                self.zpool_queue.collect(),
-                self.zfs_list.collect(),
-                self.arc.collect(),
-            );
+        let (status_res, list_res, io_size_res, latency_res, queue_res, zfs_res, arc_res) = tokio::join!(
+            self.zpool_status.collect(),
+            self.zpool_list.collect(),
+            self.zpool_io_size.collect(),
+            self.zpool_latency.collect(),
+            self.zpool_queue.collect(),
+            self.zfs_list.collect(),
+            self.arc.collect(),
+        );
 
         let mut errors = Vec::new();
 

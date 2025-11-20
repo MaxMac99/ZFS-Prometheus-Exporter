@@ -185,18 +185,19 @@
               wantedBy = [ "multi-user.target" ];
               after = [ "network.target" "zfs.target" ];
               requires = [ "zfs.target" ];
+              path = [ pkgs.zfs ];
 
               serviceConfig = {
                 Type = "simple";
                 ExecStart = "${cfg.package}/bin/zfs-prometheus-exporter --port ${toString cfg.port} --host ${cfg.host} ${lib.concatStringsSep " " cfg.extraFlags}";
                 Restart = "always";
                 RestartSec = "10s";
-                
+
                 # Security hardening
                 DynamicUser = false; # Need root for ZFS commands
                 User = "root";
                 Group = "root";
-                
+
                 # Hardening options
                 NoNewPrivileges = true;
                 PrivateTmp = true;
@@ -204,11 +205,11 @@
                 ProtectHome = true;
                 ReadOnlyPaths = "/";
                 ReadWritePaths = [ "/proc/spl" ];
-                
+
                 # Resource limits
                 MemoryMax = "256M";
                 TasksMax = 16;
-                
+
                 # Logging
                 StandardOutput = "journal";
                 StandardError = "journal";
