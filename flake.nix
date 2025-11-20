@@ -200,22 +200,9 @@
                 Restart = "always";
                 RestartSec = "10s";
 
-                # Security hardening
-                DynamicUser = false; # Need root for ZFS commands
+                # Run as root - ZFS commands require it
                 User = "root";
                 Group = "root";
-
-                # Hardening options
-                PrivateTmp = true;
-                ProtectHome = true;
-
-                # ZFS requires access to devices
-                PrivateDevices = false;
-                DevicePolicy = "auto";
-
-                # Resource limits
-                MemoryMax = "256M";
-                TasksMax = 16;
 
                 # Logging
                 StandardOutput = "journal";
