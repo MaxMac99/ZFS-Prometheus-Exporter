@@ -51,15 +51,55 @@ impl Metrics {
     }
 
     pub async fn collect(&self) -> Result<()> {
-        tokio::try_join!(
-            self.zpool_status.collect(),
-            self.zpool_list.collect(),
-            self.zpool_io_size.collect(),
-            self.zpool_latency.collect(),
-            self.zpool_queue.collect(),
-            self.zfs_list.collect(),
-            self.arc.collect(),
-        )?;
+        use tracing::{error, warn};
+
+        // Collect all metrics concurrently, logging errors but not failing
+        let (status_res, list_res, io_size_res, latency_res, queue_res, zfs_res, arc_res) =
+            tokio::join!(
+                self.zpool_status.collect(),
+                self.zpool_list.collect(),
+                self.zpool_io_size.collect(),
+                self.zpool_latency.collect(),
+                self.zpool_queue.collect(),
+                self.zfs_list.collect(),
+                self.arc.collect(),
+            );
+
+        let mut errors = Vec::new();
+
+        if let Err(e) = status_res {
+            error!("Failed to collect zpool status metrics: {:?}", e);
+            errors.push(format!("zpool_status: {}", e));
+        }
+        if let Err(e) = list_res {
+            error!("Failed to collect zpool list metrics: {:?}", e);
+            errors.push(format!("zpool_list: {}", e));
+        }
+        if let Err(e) = io_size_res {
+            error!("Failed to collect zpool IO size metrics: {:?}", e);
+            errors.push(format!("zpool_io_size: {}", e));
+        }
+        if let Err(e) = latency_res {
+            error!("Failed to collect zpool latency metrics: {:?}", e);
+            errors.push(format!("zpool_latency: {}", e));
+        }
+        if let Err(e) = queue_res {
+            error!("Failed to collect zpool queue metrics: {:?}", e);
+            errors.push(format!("zpool_queue: {}", e));
+        }
+        if let Err(e) = zfs_res {
+            error!("Failed to collect zfs list metrics: {:?}", e);
+            errors.push(format!("zfs_list: {}", e));
+        }
+        if let Err(e) = arc_res {
+            error!("Failed to collect ARC metrics: {:?}", e);
+            errors.push(format!("arc: {}", e));
+        }
+
+        if !errors.is_empty() {
+            warn!("{} metric collection(s) failed", errors.len());
+        }
+
         Ok(())
     }
 }
