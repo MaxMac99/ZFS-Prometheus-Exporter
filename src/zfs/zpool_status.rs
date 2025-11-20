@@ -5,6 +5,7 @@ use serde::Deserialize;
 use std::collections::HashMap;
 use strum::EnumIter;
 use tokio::process::Command;
+use tracing::debug;
 
 #[derive(Debug, Deserialize)]
 pub struct ZpoolStatus {
@@ -248,8 +249,9 @@ fn parse_pool_status(content: &str) -> anyhow::Result<ZpoolStatus> {
 }
 
 pub async fn get_pool_status() -> anyhow::Result<ZpoolStatus> {
+    debug!("Running zpool status -jpt --json-int to get pool status");
     let output = Command::new("zpool")
-        .args(["status", "-j", "-p", "-t", "--json-int"])
+        .args(["status", "-jpt", "--json-int"])
         .output()
         .await
         .context("Failed to execute zpool status")?;
@@ -260,6 +262,7 @@ pub async fn get_pool_status() -> anyhow::Result<ZpoolStatus> {
             String::from_utf8_lossy(&output.stderr)
         );
     }
+    debug!("zpool status command executed successfully");
 
     let content = String::from_utf8(output.stdout).context("Failed to parse zpool list JSON")?;
     parse_pool_status(&content)

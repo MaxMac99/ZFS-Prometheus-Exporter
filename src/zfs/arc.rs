@@ -1,4 +1,5 @@
 use anyhow::{Context, Result};
+use tracing::debug;
 
 #[derive(Debug, Default)]
 pub struct ArcStats {
@@ -65,9 +66,11 @@ fn parse_arc_stats(content: &str) -> Result<ArcStats> {
 
 pub async fn read_arc_stats() -> Result<ArcStats> {
     let arcstats_path = "/proc/spl/kstat/zfs/arcstats";
+    debug!("reading arc stats at {}", arcstats_path);
     let content = tokio::fs::read_to_string(arcstats_path)
         .await
         .context("Failed to read arcstats (is ZFS loaded?)")?;
+    debug!("read arc stats, now parsing");
 
     parse_arc_stats(&content)
 }

@@ -209,6 +209,10 @@
                 PrivateTmp = true;
                 ProtectHome = true;
 
+                # ZFS requires access to devices
+                PrivateDevices = false;
+                DevicePolicy = "auto";
+
                 # Resource limits
                 MemoryMax = "256M";
                 TasksMax = 16;

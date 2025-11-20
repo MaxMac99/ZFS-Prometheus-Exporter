@@ -4,6 +4,7 @@ use serde::de::Error as DeError;
 use serde::{Deserialize, Deserializer};
 use std::collections::HashMap;
 use tokio::process::Command;
+use tracing::debug;
 
 // JSON structures for zpool list output
 #[derive(Debug, Deserialize)]
@@ -91,6 +92,9 @@ fn parse_dataset_list(content: &str) -> anyhow::Result<ZfsList> {
 }
 
 pub async fn get_dataset_list() -> anyhow::Result<ZfsList> {
+    debug!(
+        "Running zfs list -Hpj --json-int -o name,used,available,referenced,compressratio,mounted"
+    );
     let output = Command::new("zfs")
         .args([
             "list",
@@ -109,6 +113,7 @@ pub async fn get_dataset_list() -> anyhow::Result<ZfsList> {
             String::from_utf8_lossy(&output.stderr)
         );
     }
+    debug!("zfs list command executed successfully");
 
     let content = String::from_utf8(output.stdout).context("Failed to parse zpool list JSON")?;
     parse_dataset_list(&content)
