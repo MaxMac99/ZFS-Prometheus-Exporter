@@ -1,0 +1,1485 @@
+{
+  "output_version": {
+    "command": "zfs list",
+    "vers_major": 0,
+    "vers_minor": 1
+  },
+  "datasets": {
+    "fast": {
+      "name": "fast",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 1,
+      "properties": {
+        "used": {
+          "value": 288151646208,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/k8s": {
+      "name": "fast/k8s",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 44882,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/nix": {
+      "name": "fast/nix",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 259,
+      "properties": {
+        "used": {
+          "value": 41042972672,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 41042972672,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve": {
+      "name": "fast/pve",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 261,
+      "properties": {
+        "used": {
+          "value": 146389577728,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve/vms": {
+      "name": "fast/pve/vms",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 263,
+      "properties": {
+        "used": {
+          "value": 146389479424,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve/vms/base-9000-disk-0": {
+      "name": "fast/pve/vms/base-9000-disk-0",
+      "type": "VOLUME",
+      "pool": "fast",
+      "createtxg": 34058,
+      "properties": {
+        "used": {
+          "value": 20516306944,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 693278838784,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 6130622464,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve/vms/vm-100-disk-0": {
+      "name": "fast/pve/vms/vm-100-disk-0",
+      "type": "VOLUME",
+      "pool": "fast",
+      "createtxg": 4395,
+      "properties": {
+        "used": {
+          "value": 3559424,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678896308224,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 114688,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve/vms/vm-100-disk-2": {
+      "name": "fast/pve/vms/vm-100-disk-2",
+      "type": "VOLUME",
+      "pool": "fast",
+      "createtxg": 4404,
+      "properties": {
+        "used": {
+          "value": 6619136,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678899453952,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 65536,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/pve/vms/vm-100-disk-3": {
+      "name": "fast/pve/vms/vm-100-disk-3",
+      "type": "VOLUME",
+      "pool": "fast",
+      "createtxg": 4424,
+      "properties": {
+        "used": {
+          "value": 125862895616,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 755232903168,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 32900366336,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "fast/root": {
+      "name": "fast/root",
+      "type": "FILESYSTEM",
+      "pool": "fast",
+      "createtxg": 254,
+      "properties": {
+        "used": {
+          "value": 100417093632,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 678893162496,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 82836893696,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank": {
+      "name": "tank",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 1,
+      "properties": {
+        "used": {
+          "value": 3982443991424,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 142848,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/backups": {
+      "name": "tank/backups",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 301,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/data": {
+      "name": "tank/data",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 298,
+      "properties": {
+        "used": {
+          "value": 1862560304640,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 1854355687040,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/daten-anna": {
+      "name": "tank/daten-anna",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 50385,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/daten-familie": {
+      "name": "tank/daten-familie",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 50392,
+      "properties": {
+        "used": {
+          "value": 1483115324608,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 1483115324608,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/daten-max": {
+      "name": "tank/daten-max",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 50365,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/daten-michael": {
+      "name": "tank/daten-michael",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 50376,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup": {
+      "name": "tank/fast-backup",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 307,
+      "properties": {
+        "used": {
+          "value": 136252462528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/k8s": {
+      "name": "tank/fast-backup/k8s",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 138931,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve": {
+      "name": "tank/fast-backup/pve",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 138932,
+      "properties": {
+        "used": {
+          "value": 62612208576,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve/vms": {
+      "name": "tank/fast-backup/pve/vms",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 278004,
+      "properties": {
+        "used": {
+          "value": 62612110272,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve/vms/base-9000-disk-0": {
+      "name": "tank/fast-backup/pve/vms/base-9000-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 278146,
+      "properties": {
+        "used": {
+          "value": 7193690304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 7193690304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve/vms/vm-100-disk-0": {
+      "name": "tank/fast-backup/pve/vms/vm-100-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 278576,
+      "properties": {
+        "used": {
+          "value": 452672,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 136960,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve/vms/vm-100-disk-2": {
+      "name": "tank/fast-backup/pve/vms/vm-100-disk-2",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 278716,
+      "properties": {
+        "used": {
+          "value": 346240,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 69248,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/pve/vms/vm-100-disk-3": {
+      "name": "tank/fast-backup/pve/vms/vm-100-disk-3",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 278856,
+      "properties": {
+        "used": {
+          "value": 55417522752,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 36776863680,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms": {
+      "name": "tank/fast-backup/vms",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 920,
+      "properties": {
+        "used": {
+          "value": 73640057344,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/base-9000-disk-0": {
+      "name": "tank/fast-backup/vms/base-9000-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 21232,
+      "properties": {
+        "used": {
+          "value": 2163052864,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 2163052864,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-100-disk-0": {
+      "name": "tank/fast-backup/vms/vm-100-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 3737,
+      "properties": {
+        "used": {
+          "value": 690944,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 136960,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-100-disk-1": {
+      "name": "tank/fast-backup/vms/vm-100-disk-1",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 3747,
+      "properties": {
+        "used": {
+          "value": 57344,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 57344,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-100-disk-2": {
+      "name": "tank/fast-backup/vms/vm-100-disk-2",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 3755,
+      "properties": {
+        "used": {
+          "value": 692480,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 69248,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-100-disk-3": {
+      "name": "tank/fast-backup/vms/vm-100-disk-3",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 3763,
+      "properties": {
+        "used": {
+          "value": 64218385920,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 36777232320,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-201-cloudinit": {
+      "name": "tank/fast-backup/vms/vm-201-cloudinit",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24176,
+      "properties": {
+        "used": {
+          "value": 154880,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-201-disk-0": {
+      "name": "tank/fast-backup/vms/vm-201-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24184,
+      "properties": {
+        "used": {
+          "value": 2384029376,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 2374533504,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-202-cloudinit": {
+      "name": "tank/fast-backup/vms/vm-202-cloudinit",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24194,
+      "properties": {
+        "used": {
+          "value": 154880,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-202-disk-0": {
+      "name": "tank/fast-backup/vms/vm-202-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24202,
+      "properties": {
+        "used": {
+          "value": 2455993984,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 2451075264,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-203-cloudinit": {
+      "name": "tank/fast-backup/vms/vm-203-cloudinit",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24212,
+      "properties": {
+        "used": {
+          "value": 154880,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/fast-backup/vms/vm-203-disk-0": {
+      "name": "tank/fast-backup/vms/vm-203-disk-0",
+      "type": "VOLUME",
+      "pool": "tank",
+      "createtxg": 24220,
+      "properties": {
+        "used": {
+          "value": 2416591488,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 2411692800,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/k8s": {
+      "name": "tank/k8s",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 305,
+      "properties": {
+        "used": {
+          "value": 500215624704,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 500215526400,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/k8s/timemachine": {
+      "name": "tank/k8s/timemachine",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 110620,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 3298534785024,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/pve": {
+      "name": "tank/pve",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 303,
+      "properties": {
+        "used": {
+          "value": 196608,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "yes",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank/pve/vms": {
+      "name": "tank/pve/vms",
+      "type": "FILESYSTEM",
+      "pool": "tank",
+      "createtxg": 309,
+      "properties": {
+        "used": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "available": {
+          "value": 7501090598528,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "referenced": {
+          "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "mounted": {
+          "value": "no",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        }
+      }
+    }
+  }
+}

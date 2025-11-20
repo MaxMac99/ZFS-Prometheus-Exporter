@@ -1,0 +1,171 @@
+{
+  "output_version": {
+    "command": "zpool list",
+    "vers_major": 0,
+    "vers_minor": 1
+  },
+  "pools": {
+    "fast": {
+      "name": "fast",
+      "type": "POOL",
+      "state": "ONLINE",
+      "pool_guid": 793760612261761590,
+      "txg": 263105,
+      "spa_version": 5000,
+      "zpl_version": 5,
+      "properties": {
+        "size": {
+          "value": 996432412672,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "allocated": {
+          "value": 195901894656,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "free": {
+          "value": 800530518016,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "checkpoint": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "expandsize": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "fragmentation": {
+          "value": 24,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "capacity": {
+          "value": 19,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "dedupratio": {
+          "value": "1.00",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "health": {
+          "value": "ONLINE",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "altroot": {
+          "value": "-",
+          "source": {
+            "type": "DEFAULT",
+            "data": "-"
+          }
+        }
+      }
+    },
+    "tank": {
+      "name": "tank",
+      "type": "POOL",
+      "state": "DEGRADED",
+      "pool_guid": 12476999121343162228,
+      "txg": 438964,
+      "spa_version": 5000,
+      "zpl_version": 5,
+      "properties": {
+        "size": {
+          "value": 16421807456256,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "allocated": {
+          "value": 5476873314304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "free": {
+          "value": 10944934141952,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "checkpoint": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "expandsize": {
+          "value": "-",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "fragmentation": {
+          "value": 1,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "capacity": {
+          "value": 33,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "dedupratio": {
+          "value": "1.00",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "health": {
+          "value": "DEGRADED",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "altroot": {
+          "value": "-",
+          "source": {
+            "type": "DEFAULT",
+            "data": "-"
+          }
+        }
+      }
+    }
+  }
+}
