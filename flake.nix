@@ -176,6 +176,13 @@
               description = "Log level for the exporter (error, warn, info, debug, trace)";
               example = "debug";
             };
+
+            logFormat = mkOption {
+              type = types.enum [ "text" "json" ];
+              default = "text";
+              description = "Log format for the exporter (text or json)";
+              example = "json";
+            };
           };
 
           config = mkIf cfg.enable {
@@ -214,6 +221,7 @@
 
               environment = {
                 RUST_LOG = cfg.logLevel;
+                LOG_FORMAT = cfg.logFormat;
               };
             };
 

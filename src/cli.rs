@@ -8,4 +8,7 @@ pub struct Args {
 
     #[arg(short = 'H', long, default_value = "0.0.0.0")]
     pub host: String,
+
+    #[arg(long, env = "LOG_FORMAT", default_value = "text")]
+    pub log_format: String,
 }

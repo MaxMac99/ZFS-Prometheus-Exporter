@@ -17,15 +17,23 @@ use metrics::Metrics;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // Initialize tracing
-    tracing_subscriber::fmt()
-        .with_env_filter(
-            tracing_subscriber::EnvFilter::try_from_default_env()
-                .unwrap_or_else(|_| tracing_subscriber::EnvFilter::new("info")),
-        )
-        .init();
-
     let args = Args::parse();
+
+    // Initialize tracing with format based on args
+    let env_filter = tracing_subscriber::EnvFilter::try_from_default_env()
+        .unwrap_or_else(|_| tracing_subscriber::EnvFilter::new("info"));
+
+    match args.log_format.as_str() {
+        "json" => {
+            tracing_subscriber::fmt()
+                .json()
+                .with_env_filter(env_filter)
+                .init();
+        }
+        _ => {
+            tracing_subscriber::fmt().with_env_filter(env_filter).init();
+        }
+    }
 
     info!("Starting ZFS Prometheus Exporter");
 
