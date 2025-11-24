@@ -1,7 +1,7 @@
 use anyhow::{Context, Result};
 use std::collections::HashMap;
 use tokio::process::Command;
-use tracing::debug;
+use tracing::{debug, trace};
 
 #[derive(Debug)]
 pub struct ZpoolQueueStats {
@@ -163,7 +163,8 @@ pub async fn get_pool_queue_stats() -> Result<ZpoolQueueStats> {
             String::from_utf8_lossy(&output.stderr)
         );
     }
-    debug!("zpool iostat -wvHp command executed successfully");
+    debug!("zpool iostat -qvHp command executed successfully");
+    trace!("zpool iostat -qvHp output: {:?}", &output);
 
     let content =
         String::from_utf8(output.stdout).context("Failed to parse zpool iostat -q JSON")?;

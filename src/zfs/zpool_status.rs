@@ -5,7 +5,7 @@ use serde::Deserialize;
 use std::collections::HashMap;
 use strum::EnumIter;
 use tokio::process::Command;
-use tracing::debug;
+use tracing::{debug, trace};
 
 #[derive(Debug, Deserialize)]
 pub struct ZpoolStatus {
@@ -263,6 +263,7 @@ pub async fn get_pool_status() -> anyhow::Result<ZpoolStatus> {
         );
     }
     debug!("zpool status command executed successfully");
+    trace!("zpool status output: {:?}", &output);
 
     let content = String::from_utf8(output.stdout).context("Failed to parse zpool list JSON")?;
     parse_pool_status(&content)

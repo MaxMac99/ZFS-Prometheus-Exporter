@@ -4,7 +4,7 @@ use serde::de::Error as DeError;
 use serde::{Deserialize, Deserializer};
 use std::collections::HashMap;
 use tokio::process::Command;
-use tracing::debug;
+use tracing::{debug, trace};
 
 // JSON structures for zpool list output
 #[derive(Debug, Deserialize)]
@@ -119,6 +119,7 @@ pub async fn get_pool_list() -> Result<ZpoolList> {
         );
     }
     debug!("zpool list command executed successfully");
+    trace!("zpool list output: {:?}", &output);
 
     let content = String::from_utf8(output.stdout).context("Failed to parse zpool list JSON")?;
     parse_pool_list(&content)

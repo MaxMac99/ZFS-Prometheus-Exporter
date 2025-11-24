@@ -1,5 +1,5 @@
 use anyhow::{Context, Result};
-use tracing::debug;
+use tracing::{debug, trace};
 
 #[derive(Debug, Default)]
 pub struct ArcStats {
@@ -71,6 +71,7 @@ pub async fn read_arc_stats() -> Result<ArcStats> {
         .await
         .context("Failed to read arcstats (is ZFS loaded?)")?;
     debug!("read arc stats, now parsing");
+    trace!("arc stats {:?}", content);
 
     parse_arc_stats(&content)
 }
