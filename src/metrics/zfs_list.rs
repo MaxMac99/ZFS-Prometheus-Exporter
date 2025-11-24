@@ -4,11 +4,13 @@ use prometheus_client::encoding::EncodeLabelSet;
 use prometheus_client::metrics::family::Family;
 use prometheus_client::metrics::gauge::Gauge;
 use prometheus_client::registry::Registry;
+use std::sync::atomic::AtomicU64;
 
 pub struct ZfsListMetrics {
     pub zfs_dataset_used_bytes: Family<DatasetLabels, Gauge>,
     pub zfs_dataset_available_bytes: Family<DatasetLabels, Gauge>,
     pub zfs_dataset_referenced_bytes: Family<DatasetLabels, Gauge>,
+    pub zfs_dataset_compress_ratio: Family<DatasetLabels, Gauge<f64, AtomicU64>>,
     pub zfs_dataset_mounted: Family<DatasetLabels, Gauge>,
 }
 
@@ -42,6 +44,13 @@ impl ZfsListMetrics {
             zfs_dataset_referenced_bytes.clone(),
         );
 
+        let zfs_dataset_compress_ratio = Family::<DatasetLabels, Gauge<f64, AtomicU64>>::default();
+        registry.register(
+            "zfs_dataset_compress_ratio",
+            "Compression ratio of ZFS dataset",
+            zfs_dataset_compress_ratio.clone(),
+        );
+
         let zfs_dataset_mounted = Family::<DatasetLabels, Gauge>::default();
         registry.register(
             "zfs_dataset_mounted",
@@ -53,6 +62,7 @@ impl ZfsListMetrics {
             zfs_dataset_used_bytes,
             zfs_dataset_available_bytes,
             zfs_dataset_referenced_bytes,
+            zfs_dataset_compress_ratio,
             zfs_dataset_mounted,
         }
     }
@@ -60,7 +70,7 @@ impl ZfsListMetrics {
     pub async fn collect(&self) -> Result<()> {
         let dataset_list = get_dataset_list().await?;
 
-        for (_, dataset) in dataset_list.pools {
+        for (_, dataset) in dataset_list.datasets {
             self.collect_dataset_metrics(&dataset);
         }
 
@@ -89,6 +99,13 @@ impl ZfsListMetrics {
             self.zfs_dataset_referenced_bytes
                 .get_or_create(&labels)
                 .set(referenced as i64);
+        }
+
+        // Compress ratio
+        if let Some(compress_ratio) = dataset.properties.compress_ratio {
+            self.zfs_dataset_compress_ratio
+                .get_or_create(&labels)
+                .set(compress_ratio);
         }
 
         // Mounted status

@@ -12,14 +12,14 @@
       "createtxg": 1,
       "properties": {
         "used": {
-          "value": 288151646208,
+          "value": 326624165888,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -27,6 +27,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.89",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -55,7 +62,7 @@
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -63,6 +70,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -84,21 +98,28 @@
       "createtxg": 259,
       "properties": {
         "used": {
-          "value": 41042972672,
+          "value": 49353998336,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "referenced": {
-          "value": 41042972672,
+          "value": 49353998336,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.91",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -120,14 +141,14 @@
       "createtxg": 261,
       "properties": {
         "used": {
-          "value": 146389577728,
+          "value": 140164997120,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -135,6 +156,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.27",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -156,14 +184,14 @@
       "createtxg": 263,
       "properties": {
         "used": {
-          "value": 146389479424,
+          "value": 140164898816,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -171,6 +199,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.27",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -199,7 +234,7 @@
           }
         },
         "available": {
-          "value": 693278838784,
+          "value": 653397127168,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -207,6 +242,13 @@
         },
         "referenced": {
           "value": 6130622464,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.67",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -228,14 +270,14 @@
       "createtxg": 4395,
       "properties": {
         "used": {
-          "value": 3559424,
+          "value": 3334144,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678896308224,
+          "value": 639014596608,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -243,6 +285,13 @@
         },
         "referenced": {
           "value": 114688,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "6.13",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -264,14 +313,14 @@
       "createtxg": 4404,
       "properties": {
         "used": {
-          "value": 6619136,
+          "value": 6422528,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678899453952,
+          "value": 639017742336,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -279,6 +328,13 @@
         },
         "referenced": {
           "value": 65536,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.22",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -300,14 +356,14 @@
       "createtxg": 4424,
       "properties": {
         "used": {
-          "value": 125862895616,
+          "value": 119638736896,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 755232903168,
+          "value": 715351191552,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -315,6 +371,13 @@
         },
         "referenced": {
           "value": 32900366336,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.21",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -336,21 +399,28 @@
       "createtxg": 254,
       "properties": {
         "used": {
-          "value": 100417093632,
+          "value": 136781221888,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 678893162496,
+          "value": 639011450880,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "referenced": {
-          "value": 82836893696,
+          "value": 95030693888,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "2.11",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -372,14 +442,14 @@
       "createtxg": 1,
       "properties": {
         "used": {
-          "value": 3982443991424,
+          "value": 4021494884992,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -387,6 +457,13 @@
         },
         "referenced": {
           "value": 142848,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.01",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -415,7 +492,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -423,6 +500,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -451,7 +535,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -459,6 +543,13 @@
         },
         "referenced": {
           "value": 1854355687040,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -487,7 +578,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -495,6 +586,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -523,7 +621,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -531,6 +629,13 @@
         },
         "referenced": {
           "value": 1483115324608,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -559,7 +664,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -567,6 +672,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -595,7 +707,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -603,6 +715,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -631,7 +750,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -639,6 +758,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.31",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -667,7 +793,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -675,6 +801,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -703,7 +836,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -711,6 +844,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.28",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -739,7 +879,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -747,6 +887,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.28",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -775,7 +922,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -783,6 +930,13 @@
         },
         "referenced": {
           "value": 7193690304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.67",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -811,7 +965,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -819,6 +973,13 @@
         },
         "referenced": {
           "value": 136960,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "3.86",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -847,7 +1008,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -855,6 +1016,13 @@
         },
         "referenced": {
           "value": 69248,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.22",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -883,7 +1051,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -891,6 +1059,13 @@
         },
         "referenced": {
           "value": 36776863680,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.23",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -919,7 +1094,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -927,6 +1102,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.34",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -955,7 +1137,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -963,6 +1145,13 @@
         },
         "referenced": {
           "value": 2163052864,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.82",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -991,7 +1180,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -999,6 +1188,13 @@
         },
         "referenced": {
           "value": 136960,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "3.13",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1027,7 +1223,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1035,6 +1231,13 @@
         },
         "referenced": {
           "value": 57344,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1063,7 +1266,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1071,6 +1274,13 @@
         },
         "referenced": {
           "value": 69248,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.22",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1099,7 +1309,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1107,6 +1317,13 @@
         },
         "referenced": {
           "value": 36777232320,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.27",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1135,7 +1352,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1143,6 +1360,13 @@
         },
         "referenced": {
           "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.60",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1171,7 +1395,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1179,6 +1403,13 @@
         },
         "referenced": {
           "value": 2374533504,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.80",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1207,7 +1438,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1215,6 +1446,13 @@
         },
         "referenced": {
           "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.60",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1243,7 +1481,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1251,6 +1489,13 @@
         },
         "referenced": {
           "value": 2451075264,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.78",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1279,7 +1524,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1287,6 +1532,13 @@
         },
         "referenced": {
           "value": 77440,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.60",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1315,7 +1567,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1323,6 +1575,13 @@
         },
         "referenced": {
           "value": 2411692800,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.79",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1344,21 +1603,28 @@
       "createtxg": 305,
       "properties": {
         "used": {
-          "value": 500215624704,
+          "value": 539093810432,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
           }
         },
         "referenced": {
-          "value": 500215526400,
+          "value": 539093712128,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1400,6 +1666,13 @@
             "data": "-"
           }
         },
+        "compressratio": {
+          "value": "1.00",
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
         "mounted": {
           "value": "no",
           "source": {
@@ -1423,7 +1696,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1431,6 +1704,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1459,7 +1739,7 @@
           }
         },
         "available": {
-          "value": 7501090598528,
+          "value": 7462039704960,
           "source": {
             "type": "NONE",
             "data": "-"
@@ -1467,6 +1747,13 @@
         },
         "referenced": {
           "value": 98304,
+          "source": {
+            "type": "NONE",
+            "data": "-"
+          }
+        },
+        "compressratio": {
+          "value": "1.00",
           "source": {
             "type": "NONE",
             "data": "-"

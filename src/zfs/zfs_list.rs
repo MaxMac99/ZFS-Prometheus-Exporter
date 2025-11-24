@@ -10,7 +10,7 @@ use tracing::{debug, trace};
 #[derive(Debug, Deserialize)]
 pub struct ZfsList {
     #[serde(default)]
-    pub pools: HashMap<String, Dataset>,
+    pub datasets: HashMap<String, Dataset>,
 }
 
 #[derive(Debug, Deserialize)]
@@ -42,6 +42,11 @@ pub struct Properties {
     pub available: Option<u64>,
     #[serde(deserialize_with = "deserialize_optional_u64")]
     pub referenced: Option<u64>,
+    #[serde(
+        rename = "compressratio",
+        deserialize_with = "deserialize_optional_f64"
+    )]
+    pub compress_ratio: Option<f64>,
     #[serde(deserialize_with = "deserialize_optional_bool")]
     pub mounted: Option<bool>,
 }
@@ -63,6 +68,26 @@ where
             n.as_u64().ok_or_else(|| DeError::custom("expected u64"))?,
         )),
         serde_json::Value::String(s) if s == "-" => Ok(None),
+        _ => Ok(None),
+    }
+}
+
+// Custom deserializer for f64 properties that handles "-" as None and string numbers
+fn deserialize_optional_f64<'de, D>(deserializer: D) -> anyhow::Result<Option<f64>, D::Error>
+where
+    D: Deserializer<'de>,
+{
+    let prop = PropertyValue::<serde_json::Value>::deserialize(deserializer)?;
+    match prop.value {
+        serde_json::Value::Number(n) => Ok(Some(
+            n.as_f64().ok_or_else(|| DeError::custom("expected f64"))?,
+        )),
+        serde_json::Value::String(s) if s == "-" => Ok(None),
+        serde_json::Value::String(s) => s
+            .parse::<f64>()
+            .ok()
+            .map(Some)
+            .ok_or_else(|| DeError::custom(format!("expected f64, got string: {}", s))),
         _ => Ok(None),
     }
 }
@@ -131,13 +156,13 @@ mod tests {
 
         match result {
             Ok(status) => {
-                println!("Successfully deserialized {} pools", status.pools.len());
-                for pool in &status.pools {
-                    println!("Pool: {:?}", pool);
+                println!("Successfully deserialized {} pools", status.datasets.len());
+                for dataset in &status.datasets {
+                    println!("Dataset: {:?}", dataset);
                 }
             }
             Err(e) => {
-                panic!("Failed to deserialize zpool status fixture: {}", e);
+                panic!("Failed to deserialize zfs list fixture: {}", e);
             }
         }
     }
