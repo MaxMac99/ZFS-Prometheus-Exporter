@@ -18,7 +18,9 @@
           zfs-prometheus-exporter = self.packages.${final.system}.default;
         } else { };
     in
-    flake-utils.lib.eachDefaultSystem (system:
+    # NOTE: x86_64-darwin is deliberately excluded; nixpkgs dropped support for
+    # it in 26.11 and merely instantiating it throws.
+    flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ] (system:
       let
         pkgs = import nixpkgs {
           inherit system;
@@ -112,11 +114,15 @@
 
         # Formatter for `nix fmt`
         formatter = pkgs.nixpkgs-fmt;
-      }
-      // pkgs.lib.optionalAttrs pkgs.stdenv.isLinux {
+
         # Apps for `nix run` (Linux only)
-        apps.default = flake-utils.lib.mkApp {
-          drv = self.packages.${system}.default;
+        # NOTE: kept inside this attrset rather than merged with `//`, so that
+        # taking attrNames of the per-system outputs (which flake-utils does for
+        # every system) never has to instantiate nixpkgs.
+        apps = pkgs.lib.optionalAttrs pkgs.stdenv.isLinux {
+          default = flake-utils.lib.mkApp {
+            drv = self.packages.${system}.default;
+          };
         };
       }
     ) // {
